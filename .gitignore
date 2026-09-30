@@ -1,0 +1,109 @@
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Diagnostic reports
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime files
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage
+coverage/
+
+# Build outputs
+dist/
+dist-ssr/
+build/
+out/
+output/
+
+# Temp
+tmp/
+temp/
+
+# Dependencies
+node_modules/
+
+# Package managers
+.npm/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp
+.pnp.*
+.pnpm-store/
+
+# IDE
+.idea/
+*.iml
+
+# Editor swap files
+*.swp
+*.swo
+
+# Cache
+.eslintcache
+.stylelintcache
+.parcel-cache/
+.turbo/
+.nx/
+.vite/
+.cache/
+
+# Framework artifacts
+.next/
+.nuxt/
+storybook-static/
+.docusaurus/
+
+# OS files
+.DS_Store
+**/.DS_Store
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Compiled binaries
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+coverage.xml
+.venv/
+venv/
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+Testing/
+compile_commands.json
+cmake-build-*/
+.ninja_deps
+.ninja_log
+build.ninja
+rules.ninja
+
+Iosevka/

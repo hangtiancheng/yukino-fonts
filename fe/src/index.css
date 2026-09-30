@@ -1,0 +1,29 @@
+
+
+@import "tailwindcss";
+
+/* The two Rico cuts, shipped from src/Rico (Latin-only TrueType faces). */
+@font-face {
+  font-family: "Rico 1";
+  src: url("../../src/Rico/Rico_1-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rico 2";
+  src: url("../../src/Rico/Rico_2-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-rico-1: "Rico 1", Geist Mono, Menlo, Cascadia Code, monospace;
+  --font-rico-2: "Rico 2", Geist Mono, Menlo, Cascadia Code, monospace;
+}
+
+:root {
+  scroll-behavior: smooth;
+}

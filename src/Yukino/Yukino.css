@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Yukino Web";
+  font-display: swap;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  src:
+    url("WOFF2/Yukino-Regular.woff2") format("woff2"),
+    url("TTF/Yukino-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Yukino Web";
+  font-display: swap;
+  font-weight: 400;
+  font-stretch: expanded;
+  font-style: normal;
+  src:
+    url("WOFF2/Yukino-Extended.woff2") format("woff2"),
+    url("TTF/Yukino-Extended.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Yukino Web";
+  font-display: swap;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: italic;
+  src:
+    url("WOFF2/Yukino-Italic.woff2") format("woff2"),
+    url("TTF/Yukino-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Yukino Web";
+  font-display: swap;
+  font-weight: 400;
+  font-stretch: expanded;
+  font-style: italic;
+  src:
+    url("WOFF2/Yukino-ExtendedItalic.woff2") format("woff2"),
+    url("TTF/Yukino-ExtendedItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Yukino Web";
+  font-display: swap;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  src:
+    url("WOFF2/Yukino-Bold.woff2") format("woff2"),
+    url("TTF/Yukino-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Yukino Web";
+  font-display: swap;
+  font-weight: 700;
+  font-stretch: expanded;
+  font-style: normal;
+  src:
+    url("WOFF2/Yukino-ExtendedBold.woff2") format("woff2"),
+    url("TTF/Yukino-ExtendedBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Yukino Web";
+  font-display: swap;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: italic;
+  src:
+    url("WOFF2/Yukino-BoldItalic.woff2") format("woff2"),
+    url("TTF/Yukino-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Yukino Web";
+  font-display: swap;
+  font-weight: 700;
+  font-stretch: expanded;
+  font-style: italic;
+  src:
+    url("WOFF2/Yukino-ExtendedBoldItalic.woff2") format("woff2"),
+    url("TTF/Yukino-ExtendedBoldItalic.ttf") format("truetype");
+}

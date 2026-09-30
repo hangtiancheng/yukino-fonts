@@ -1,0 +1,82 @@
+{
+  "name": "@yukino.js/fonts",
+  "version": "0.0.1",
+  "description": "@yukino.js/fonts",
+  "type": "module",
+  "main": "./build/index.js",
+  "module": "./build/index.js",
+  "exports": {
+    ".": {
+      "types": "./build/index.d.ts",
+      "default": "./build/index.js"
+    },
+    "./extended": {
+      "types": "./build/extended.d.ts",
+      "default": "./build/extended.js"
+    },
+    "./rico": {
+      "types": "./build/rico.d.ts",
+      "default": "./build/rico.js"
+    },
+    "./Yukino/*": "./build/Yukino/*",
+    "./Rico/*": "./build/Rico/*"
+  },
+  "files": [
+    "build",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rm -rf build/ && tsc -p tsconfig.build.json",
+    "postbuild": "cp -r src/Yukino src/Rico build",
+    "format": "prettier -w ./ --experimental-cli",
+    "dev": "vite",
+    "lint": "eslint --fix ./",
+    "build:fe": "tsc -p tsconfig.json && vite build",
+    "preview": "vite preview",
+    "prepublishOnly": "pnpm build",
+    "git:commit": "git add -A && git commit -m \"feat: Introduce new features\"",
+    "git:commit:n": "git add -A && git commit -m \"feat: Introduce new features\" --no-verify",
+    "git:push": "pnpm git:commit && git push origin main",
+    "git:push:n": "pnpm git:commit:n && git push origin main"
+  },
+  "bugs": {
+    "url": "https://github.com/hangtiancheng/yukino-fonts/issues"
+  },
+  "homepage": "https://github.com/hangtiancheng/yukino-fonts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hangtiancheng/yukino-fonts"
+  },
+  "keywords": [
+    "fonts",
+    "yukino",
+    "monospace",
+    "next-font"
+  ],
+  "author": "https://github.com/hangtiancheng",
+  "license": "MIT",
+  "packageManager": "pnpm@10.33.1",
+  "peerDependencies": {
+    "next": ">=13"
+  },
+  "dependencies": {
+    "jotai": "^2.20.3",
+    "lit": "^3.3.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^24.19.0",
+    "@yukino.js/lit-jsx": "latest",
+    "eslint": "^10.11.0",
+    "globals": "^17.12.0",
+    "next": "^16.3.7",
+    "prettier": "^3.9.9",
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "tailwindcss": "^4.3.3",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.71.0",
+    "vite": "^8.3.1"
+  }
+}
