@@ -20,7 +20,7 @@
     "emitDecoratorMetadata": true,
     "useDefineForClassFields": false,
     "paths": {
-      "@/*": ["./fe/src/*"]
+      "@/*": ["./src/fe/*"]
     },
 
     /* Linting */
@@ -32,5 +32,5 @@
     // Legacy decorators (Lit) emit code, so this must stay off.
     "erasableSyntaxOnly": false
   },
-  "include": ["src", "fe/src"]
+  "include": ["src"]
 }

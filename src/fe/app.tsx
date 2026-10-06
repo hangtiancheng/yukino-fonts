@@ -1,5 +1,3 @@
-
-
 import {
   ricoStore,
   faceAtom,

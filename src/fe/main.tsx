@@ -1,12 +1,10 @@
-
-
 import "@/index.css";
 
 import { createRoot } from "@yukino.js/lit-jsx";
 import { ricoStore, faceAtom, sizeAtom, textAtom } from "@/store";
 import App from "@/app";
-import rico1Url from "../../src/Rico/Rico_1-Regular.ttf";
-import rico2Url from "../../src/Rico/Rico_2-Regular.ttf";
+import rico1Url from "../Rico/Rico_1-Regular.ttf";
+import rico2Url from "../Rico/Rico_2-Regular.ttf";
 
 // Preload both Rico faces at Low priority. Vite asset imports guarantee the
 // preload href matches the @font-face url() byte-for-byte in dev and build.

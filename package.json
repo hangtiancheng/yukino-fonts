@@ -27,8 +27,7 @@
     "README.md"
   ],
   "scripts": {
-    "build": "rm -rf build/ && tsc -p tsconfig.build.json",
-    "postbuild": "cp -r src/Yukino src/Rico build",
+    "build": "vite build --mode lib && tsc -p tsconfig.build.json",
     "format": "prettier -w ./ --experimental-cli",
     "dev": "vite",
     "lint": "eslint --fix ./",

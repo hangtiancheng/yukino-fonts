@@ -114,12 +114,16 @@ jotai) is deployed with GitHub Pages:
 
 ## Development
 
-| Script          | Purpose                                                            |
-| --------------- | ------------------------------------------------------------------ |
-| `pnpm build`    | Compile `src/*.ts` next-font entries to `build/` + copy font files |
-| `pnpm dev`      | Dev server for the fe (`fe/`)                                      |
-| `pnpm build:fe` | Type-check + production build of the fe into `dist/`               |
-| `pnpm preview`  | Serve the built fe                                                 |
+| Script          | Purpose                                                                   |
+| --------------- | ------------------------------------------------------------------------- |
+| `pnpm build`    | Vite lib-mode build of the font package into `build/` (+ tsc for `.d.ts`) |
+| `pnpm dev`      | Dev server for the fe (`src/fe/`)                                         |
+| `pnpm build:fe` | Type-check + production build of the fe into `dist/`                      |
+| `pnpm preview`  | Serve the built fe                                                        |
+
+A single `vite.config.ts` serves both builds: the default mode builds the fe
+app, and `vite build --mode lib` builds the font package (ESM entries plus
+verbatim font assets).
 
 The fe is built with [lit](https://lit.dev) +
 [`@yukino.js/lit-jsx`](https://www.npmjs.com/package/@yukino.js/lit-jsx) +

@@ -12,13 +12,13 @@
     <title>Rico — A Latin-only handwritten typeface</title>
     <!--
       The Rico 1 / Rico 2 preload links (fetchpriority="low") are inserted
-      from src/main.tsx via Vite asset imports, so the preload URL always
+      from main.tsx via Vite asset imports, so the preload URL always
       matches the @font-face url() exactly in dev and build. A static href
       here only rewrites at build time and misses in dev.
     -->
   </head>
   <body>
     <div id="app"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script type="module" src="/main.tsx"></script>
   </body>
 </html>

@@ -21,6 +21,8 @@
     // Other Outputs
     "sourceMap": false,
     "declaration": true,
+    // JS is emitted by `vite build --mode lib`; tsc only emits declarations.
+    "emitDeclarationOnly": true,
     "declarationMap": false,
 
     // Stricter Typechecking Options
@@ -44,8 +46,8 @@
     "moduleDetection": "force",
     "skipLibCheck": true
   },
-  // Only the next-font entry modules are compiled into build/;
-  // font binaries under src/Yukino and src/Rico are copied verbatim
-  // by the postbuild script.
+  // Only the next-font entry modules emit declarations into build/;
+  // the JS bundles and font binaries (src/Yukino, src/Rico) are produced
+  // by `vite build --mode lib`.
   "include": ["src/*.ts"]
 }
