@@ -34,10 +34,9 @@
     "build:fe": "tsc -p tsconfig.json && vite build",
     "preview": "vite preview",
     "prepublishOnly": "pnpm build",
+    "git:config": "git config user.name hangtiancheng && git config user.email '161043261@qq.com'",
     "git:commit": "git add -A && git commit -m \"feat: Introduce new features\"",
-    "git:commit:n": "git add -A && git commit -m \"feat: Introduce new features\" --no-verify",
-    "git:push": "pnpm git:commit && git push origin main",
-    "git:push:n": "pnpm git:commit:n && git push origin main"
+    "git:push": "pnpm git:commit && git push origin main"
   },
   "bugs": {
     "url": "https://github.com/hangtiancheng/yukino-fonts/issues"
