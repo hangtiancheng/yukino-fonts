@@ -27,7 +27,7 @@ export const YukinoExtended = localFont({
   ],
   variable: "--font-yukino-extended",
   fallback: [
-    "Geist Mono",
+    "Maple Mono",
     "Menlo",
     "Cascadia Code",
     "Liberation Mono",

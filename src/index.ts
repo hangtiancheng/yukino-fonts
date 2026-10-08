@@ -27,7 +27,7 @@ export const Yukino = localFont({
   ],
   variable: "--font-yukino",
   fallback: [
-    "Geist Mono",
+    "Maple Mono",
     "Menlo",
     "Cascadia Code",
     "Liberation Mono",

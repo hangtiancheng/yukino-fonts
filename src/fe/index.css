@@ -18,8 +18,8 @@
 }
 
 @theme {
-  --font-rico-1: "Rico 1", Geist Mono, Menlo, Cascadia Code, monospace;
-  --font-rico-2: "Rico 2", Geist Mono, Menlo, Cascadia Code, monospace;
+  --font-rico-1: "Rico 1", Yukino, "Maple Mono", Menlo, Cascadia Code, monospace;
+  --font-rico-2: "Rico 2", Yukino, "Maple Mono", Menlo, Cascadia Code, monospace;
 }
 
 :root {
