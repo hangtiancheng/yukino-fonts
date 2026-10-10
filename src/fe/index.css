@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-/* The two Rico cuts, shipped from src/Rico (Latin-only TrueType faces). */
 @font-face {
   font-family: "Rico 1";
   src: url("../Rico/Rico_1-Regular.ttf") format("truetype");
@@ -18,8 +17,10 @@
 }
 
 @theme {
-  --font-rico-1: "Rico 1", Yukino, "Maple Mono", Menlo, Cascadia Code, monospace;
-  --font-rico-2: "Rico 2", Yukino, "Maple Mono", Menlo, Cascadia Code, monospace;
+  --font-rico-1:
+    "Rico 1", Yukino, "Maple Mono", Menlo, Cascadia Code, monospace;
+  --font-rico-2:
+    "Rico 2", Yukino, "Maple Mono", Menlo, Cascadia Code, monospace;
 }
 
 :root {

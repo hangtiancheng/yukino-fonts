@@ -11,7 +11,6 @@ const FACES: { id: RicoFace; label: string }[] = [
   { id: "Rico_2", label: "Rico 2" },
 ];
 
-/** Tailwind utility for the active face (both names are literal so the v4 scanner picks them up). */
 const faceClass = (face: RicoFace): string =>
   face === "Rico_1" ? "font-rico-1" : "font-rico-2";
 
@@ -250,7 +249,6 @@ function Footer(): unknown {
   );
 }
 
-/** Root view rendered by the lit-jsx runtime; re-rendered on store changes. */
 export default function App(): unknown {
   const face = ricoStore.get(faceAtom);
   const size = ricoStore.get(sizeAtom);

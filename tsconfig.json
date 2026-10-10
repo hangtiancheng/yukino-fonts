@@ -6,14 +6,12 @@
     "types": ["vite/client"],
     "skipLibCheck": true,
 
-    /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
     "moduleDetection": "force",
     "noEmit": true,
 
-    /* Lit + @yukino.js/lit-jsx (frontend) */
     "jsx": "react-jsx",
     "jsxImportSource": "@yukino.js/lit-jsx",
     "experimentalDecorators": true,
@@ -23,13 +21,11 @@
       "@/*": ["./src/fe/*"]
     },
 
-    /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
-    // Legacy decorators (Lit) emit code, so this must stay off.
     "erasableSyntaxOnly": false
   },
   "include": ["src"]

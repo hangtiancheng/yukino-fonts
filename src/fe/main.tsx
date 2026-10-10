@@ -6,11 +6,6 @@ import App from "@/app";
 import rico1Url from "../Rico/Rico_1-Regular.ttf";
 import rico2Url from "../Rico/Rico_2-Regular.ttf";
 
-// Preload both Rico faces at Low priority. Vite asset imports guarantee the
-// preload href matches the @font-face url() byte-for-byte in dev and build.
-// All text on this page is JS-rendered, so these requests beat the first
-// font-usage trigger and carry the low-priority mark. crossorigin is
-// mandatory for as="font" preloads (font fetches are always CORS-mode).
 for (const href of [rico1Url, rico2Url]) {
   const link = document.createElement("link");
   link.rel = "preload";
@@ -32,8 +27,6 @@ const render = (): void => {
   root.render(<App />);
 };
 
-// Any persisted atom change re-renders the root view; the values themselves
-// are read imperatively from the vanilla store inside App().
 const unsubscribes = [faceAtom, sizeAtom, textAtom].map((atom) =>
   ricoStore.sub(atom, render),
 );

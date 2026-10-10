@@ -6,8 +6,6 @@ import { defineConfig, type Plugin } from "vite";
 const resolve = (path: string): string =>
   fileURLToPath(new URL(path, import.meta.url));
 
-// Font binaries are referenced by next/font at consumer build time, so they
-// are copied verbatim instead of being bundled.
 const copyFontAssets = (): Plugin => ({
   name: "copy-font-assets",
   apply: "build",
@@ -21,9 +19,6 @@ const copyFontAssets = (): Plugin => ({
   },
 });
 
-// Two modes:
-//   vite build --mode lib  — font package (build/, lib mode, d.ts via tsc)
-//   vite / vite build      — fe (dist/, GitHub Pages)
 export default defineConfig(({ command, mode }) => {
   if (mode === "lib") {
     return {
