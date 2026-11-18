@@ -29,11 +29,11 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Type-check and build fe
-        run: pnpm build:fe
+      - name: Type-check and build
+        run: pnpm build
 
       - name: Build font package (build/ must match package exports)
-        run: pnpm build
+        run: pnpm build:lib
 
       - name: Show pack preview
         run: pnpm pack --dry-run

@@ -27,11 +27,11 @@
     "README.md"
   ],
   "scripts": {
-    "build": "vite build --mode lib && tsc -p tsconfig.build.json",
+    "build:lib": "vite build --mode lib && tsc -p tsconfig.build.json",
     "format": "prettier -w ./ --experimental-cli",
     "dev": "vite",
     "lint": "eslint --fix ./",
-    "build:fe": "tsc -p tsconfig.json && vite build",
+    "build": "tsc -p tsconfig.json && vite build",
     "preview": "vite preview",
     "prepublishOnly": "pnpm build",
     "git:config": "git config user.name hangtiancheng && git config user.email '161043261@qq.com'",
