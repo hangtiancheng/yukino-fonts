@@ -44,12 +44,12 @@ export default defineConfig(({ command, mode }) => {
   }
 
   return {
-    root: resolve("./src/fe"),
+    root: resolve("./src/browser"),
     base: command === "build" ? "/yukino-fonts/" : "/",
     plugins: [tailwindcss()],
     resolve: {
       alias: {
-        "@": resolve("./src/fe"),
+        "@": resolve("./src/browser"),
       },
     },
     build: {

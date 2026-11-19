@@ -98,7 +98,7 @@ import { Rico1, Rico2 } from "@yukino.js/fonts/rico";
 The two cuts ship as Regular (400) TrueType faces with `ui-sans-serif` /
 `system-ui` fallbacks, exposed as `--font-rico1` and `--font-rico2`.
 
-A live intro / type-tester fe (switch Rico 1 <-> Rico 2, persistence via
+A live intro / type-tester browser (switch Rico 1 <-> Rico 2, persistence via
 jotai) is deployed with GitHub Pages:
 <https://hangtiancheng.github.io/yukino-fonts/>
 
@@ -114,20 +114,20 @@ jotai) is deployed with GitHub Pages:
 
 ## Development
 
-| Script          | Purpose                                                                   |
-| --------------- | ------------------------------------------------------------------------- |
-| `pnpm build`    | Vite lib-mode build of the font package into `build/` (+ tsc for `.d.ts`) |
-| `pnpm dev`      | Dev server for the fe (`src/fe/`)                                         |
-| `pnpm build:fe` | Type-check + production build of the fe into `dist/`                      |
-| `pnpm preview`  | Serve the built fe                                                        |
+| Script           | Purpose                                                                   |
+| ---------------- | ------------------------------------------------------------------------- |
+| `pnpm build:lib` | Vite lib-mode build of the font package into `build/` (+ tsc for `.d.ts`) |
+| `pnpm dev`       | Dev server for the browser (`src/browser/`)                               |
+| `pnpm build`     | Type-check + production build of the browser into `dist/`                 |
+| `pnpm preview`   | Serve the built browser                                                   |
 
-A single `vite.config.ts` serves both builds: the default mode builds the fe
+A single `vite.config.ts` serves both builds: the default mode builds the browser
 app, and `vite build --mode lib` builds the font package (ESM entries plus
 verbatim font assets).
 
-The fe is built with [lit](https://lit.dev) +
+The browser is built with [lit](https://lit.dev) +
 [`@yukino.js/lit-jsx`](https://www.npmjs.com/package/@yukino.js/lit-jsx) +
 Tailwind CSS 4 + jotai (`atomWithStorage` persists the active face, tester
 size and sample text to localStorage). `.github/workflows/ci.yml` builds the
-package and fe, then deploys `dist/` to GitHub Pages on pushes to
+package and browser, then deploys `dist/` to GitHub Pages on pushes to
 `main`.

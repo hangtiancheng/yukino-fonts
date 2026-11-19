@@ -18,7 +18,7 @@
     "emitDecoratorMetadata": true,
     "useDefineForClassFields": false,
     "paths": {
-      "@/*": ["./src/fe/*"]
+      "@/*": ["./src/browser/*"]
     },
 
     "strict": true,

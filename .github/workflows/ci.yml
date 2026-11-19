@@ -14,7 +14,7 @@ permissions:
 
 jobs:
   build:
-    name: Build package + fe
+    name: Build package + browser
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -44,7 +44,7 @@ jobs:
           path: dist
 
   deploy:
-    name: Deploy fe to GitHub Pages
+    name: Deploy browser to GitHub Pages
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     needs: build
     runs-on: ubuntu-latest
